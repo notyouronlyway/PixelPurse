@@ -21,7 +21,7 @@ IMPORTANT
 NOTE
 !always try to optimize your code
 !folder structure might change, depending on the group discussion
-!do not make changes or modify codes on the fields that is not on your task, for now
+!do not make changes or modify codes on the parts that is not included on your task, for now
 
 
 
