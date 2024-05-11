@@ -1,0 +1,11 @@
+
+PixelPurse Collaborators list:
+
+This listing serves as confirmation that who ever is listed here
+can clone - commit - push. And managed to explore the some/entire files
+of this project.
+
+
+1. Oco John Paul S.
+2.
+3.
