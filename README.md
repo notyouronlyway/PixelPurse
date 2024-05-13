@@ -9,6 +9,7 @@ we might end up having a local storage...
 -------------------------------------------------
 IMPORTANT
 
+- always start with . when linking something
 - Comments must be accurate
 - After coding, format your code with Prettier
 - Run your code using LiveServer only
