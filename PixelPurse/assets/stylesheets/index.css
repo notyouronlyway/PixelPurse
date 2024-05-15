@@ -36,6 +36,38 @@ body .btn-custom-learn {
     background-color: rgb(0, 140, 255);
 }
 
+/*featured users card*/
+
+.card-text {
+    font-size: 12px;
+}
+
+
+/* Customized scrollbar */
+.overflow-auto::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.overflow-auto::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* hover, change scrollbar thumb color */
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 140, 255);
+}
+
+/*scrollbar buttons */
+.overflow-auto::-webkit-scrollbar-button {
+    display: none;
+}
+
+/*scrollbar width and height */
+.overflow-auto::-webkit-scrollbar {
+    width: 4px; /* crollbar width */
+    height: 4px; /* scrollbar height */
+}
+
 /*--------------------*/
 
 /* Override default margin for navbar */
@@ -142,5 +174,9 @@ body .btn-custom-learn {
 
         .hr {
             margin-top: 10px !important;
+        }
+
+        body h2 {
+            font-size: 20px;
         }
     }
