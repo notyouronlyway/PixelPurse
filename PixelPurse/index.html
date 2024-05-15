@@ -1,19 +1,140 @@
-
-
-<!--THIS IS THE LANDING PAGE-->
-<!--must include login-->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unlock your digital potential with PixelPurse!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Web App</title>
+    <link rel="stylesheet" href="./assets/stylesheets/index.css">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-    <p class="display-1">Test</p>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Logo and Logoname -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-top me-2"
+          />
+          PixelPurse
+        </a>
+        <!-- Toggler Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="loginLink">Login/Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Form Popup -->
+    <div class="popup-container" id="loginPopup">
+        <h4 style="color:rgb(22, 214, 228);">Login to your Account</h4>
+        <form class="login-form">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Unlock your digital<br>potential with PixelPurse</h1>
+                <h5>Buy products & services or start earning now!</h5>
+
+                <button class="btn btn-custom-getstarted mt-3">GET STARTED</button>
+                <button class="btn btn-custom-learn mt-3 ms-4">LEARN MORE</button>
+
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="row">
+                    <div class="col-md-6 mb-3 pr-2 pl-2">
+                        <img src="https://via.placeholder.com/200" alt="Image 1" class="img-fluid d-none d-md-block">
+                    </div>
+                    <div class="col-md-6 mb-3 pr-2 pl-2">
+                        <img src="https://via.placeholder.com/200" alt="Image 2" class="img-fluid d-none d-md-block">
+                    </div>
+                    <div class="col-md-6 mb-3 mt-md-3 pr-2 pl-2">
+                        <img src="https://via.placeholder.com/200" alt="Image 3" class="img-fluid d-none d-md-block">
+                    </div>
+                    <div class="col-md-6 mb-3 mt-md-3 pr-2 pl-2">
+                        <img src="https://via.placeholder.com/200" alt="Image 4" class="img-fluid d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <hr class="my-5 custom-hr" style="color: rgb(0, 140, 255)">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script>
+      document
+        .getElementById("loginLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("loginPopup").style.display = "block"; // Show the login popup
+          document.getElementById("overlay").style.display = "block"; //dark overlay
+        });
+
+
+        //when user click outside the form
+        document.getElementById("overlay").addEventListener("click", function () {
+            document.getElementById("loginPopup").style.display = "none"; // Hide the login popup
+            document.getElementById("overlay").style.display = "none"; // Hide the overlay
+        });
+    </script>
+  </body>
 </html>
