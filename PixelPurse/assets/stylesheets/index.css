@@ -42,6 +42,11 @@ body .btn-custom-learn {
     font-size: 12px;
 }
 
+.card-body {
+    background-color: rgb(0, 140, 255); /* Example of a custom color using hexadecimal value */
+    color: white; /* Set text color to white for better contrast */
+}
+
 
 /* Customized scrollbar */
 .overflow-auto::-webkit-scrollbar-track {
